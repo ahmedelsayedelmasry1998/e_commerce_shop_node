@@ -1,0 +1,52 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Members</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <form action="/editMember" method="POST" class="addInTable">
+                <div class="row">
+                    <span>User Name : </span>
+                    <input class="itemVal" style="display: none;" type="text" name="userId" value="{{memberId}}">
+                    <input class="itemVal" type="text" name="username" value="{{userName}}">
+                </div>
+                <div class="row">
+                    <span>Password : </span>
+                    <input class="itemVal" type="password" name="password" value="{{password}}">
+                </div>
+                <div class="row">
+                    <span>Full Name : </span>
+                    <input class="itemVal" type="text" name="fullname" placeholder="Please Enter Full Name ...">
+                </div>
+                <div class="row">
+                    <span>Email : </span>
+                    <input class="itemVal" type="email" name="email" value="{{email}}">
+                </div>
+                <div class="row">
+                    <span>Hire Date : </span>
+                    <input class="itemVal" type="date" name="hiredate" placeholder="Please Enter Hire Date">
+                </div>
+                <div class="row">
+                    <span>User Type : </span>
+                    <select class="itemVal" name="usertype" id="">
+                        {{#if admin}}
+                         <option  value="User">User</option>
+                            <option selected value="Admin">Admin</option>
+                        {{/if}}
+                        {{#if user}}
+                            <option selected value="User">User</option>
+                            <option  value="Admin">Admin</option>
+
+                        {{/if}}
+                    </select>
+                </div>
+                <div class="row">
+                    <button class="btn-save save"><i class="fa-regular fa-pen-to-square"></i> Update User</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <?php
+    include_once("../master/sections/foot.php"); ?>
+    <script src="../master/js/validate.js"></script>
+    <?php include_once("../master/sections/end.php");
+    ?>

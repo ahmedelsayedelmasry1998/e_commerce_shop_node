@@ -1,0 +1,43 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Items</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <div class="search">
+                <input type="text" placeholder="Search..." name="" id="search">
+            </div>
+            <div class="add">
+                <a href="/addItem">Add Items</a>
+            </div>
+        </div>
+        <div id="containerDiv" class="allData">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Added Date</th>
+                    <th>Country Made</th>
+                    <th>Catogery</th>
+                    <th>Item Photo</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                {{#each resault}}
+                    <tr class="handelTr">
+                       <td>{{this.itemName}}</td>
+                       <td>{{this.itemPrice}} LE</td>
+                       <td>{{this.addedDate}}</td>
+                       <td>{{this.counteryMade}}</td>
+                       <td>{{this.catId.catName}}</td>
+                       <td><img src="{{this.itemPhoto}}" width="100%" height="100px" class="handelPhoto" alt=""></td>
+                        <td>
+                                <a href="/editItem/{{this._id}}" class="btn-edit"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                        </td>
+                        <td>
+                                <a href="/deleteItem/{{this._id}}" class="btn-delete"><i class="fa-solid fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>

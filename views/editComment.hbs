@@ -1,0 +1,17 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Comments</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <form action="/editComment" method="POST" class="addInTable">
+                <input style="display: none;" type="text" name="commentId" value="{{commentId}}">
+                <div class="row">
+                    <span>Comment : </span>
+                    <input class="itemVal" type="text" name="comment" value="{{comment}}">
+                </div>
+                <div class="row">
+                    <button class="btn-save save"><i class="fa-regular fa-pen-to-square"></i> Update Comment</button>
+                </div>
+            </form>
+        </div>
+    </div>

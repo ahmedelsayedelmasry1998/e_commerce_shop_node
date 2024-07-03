@@ -1,0 +1,115 @@
+[{
+  "_id": {
+    "$oid": "6680676e498c21d445aeabcd"
+  },
+  "itemName": "Hand Mouse",
+  "itemPrice": 500,
+  "addedDate": {
+    "$date": "2024-06-21T00:00:00.000Z"
+  },
+  "counteryMade": "Egypt",
+  "status": 0,
+  "rating": 1,
+  "approve": 1,
+  "itemActive": 1,
+  "itemPhoto": "/itemImages/mouse.jpg",
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "catId": {
+    "$oid": "6680673e498c21d445aeabc8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6681f5404925e1d54b831981"
+  },
+  "itemName": "Labtop Asous",
+  "itemPrice": 15000,
+  "addedDate": {
+    "$date": "2024-07-26T00:00:00.000Z"
+  },
+  "counteryMade": "Egypt",
+  "status": 1,
+  "rating": 1,
+  "approve": 1,
+  "itemActive": 1,
+  "itemPhoto": "/itemImages/labtop asous.jpg",
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "catId": {
+    "$oid": "6681f5104925e1d54b831977"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66826957fae9a230c01d3310"
+  },
+  "itemName": "Labtop  X10",
+  "itemPrice": 150000,
+  "addedDate": {
+    "$date": "2024-07-25T00:00:00.000Z"
+  },
+  "counteryMade": "Egypt",
+  "status": 0,
+  "rating": 1,
+  "approve": 1,
+  "itemActive": 1,
+  "itemPhoto": "/itemImages/labtop x10.jpg",
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "catId": {
+    "$oid": "6681f5104925e1d54b831977"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66826978fae9a230c01d3319"
+  },
+  "itemName": "Labtop  X12",
+  "itemPrice": 20000,
+  "addedDate": {
+    "$date": "2024-07-18T00:00:00.000Z"
+  },
+  "counteryMade": "Egypt",
+  "status": 1,
+  "rating": 1,
+  "approve": 1,
+  "itemActive": 1,
+  "itemPhoto": "/itemImages/labtop x12.jpg",
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "catId": {
+    "$oid": "6681f5104925e1d54b831977"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6682699dfae9a230c01d3322"
+  },
+  "itemName": "Labtop  X15",
+  "itemPrice": 25000,
+  "addedDate": {
+    "$date": "2024-08-01T00:00:00.000Z"
+  },
+  "counteryMade": "Egypt",
+  "status": 2,
+  "rating": 1,
+  "approve": 1,
+  "itemActive": 1,
+  "itemPhoto": "/itemImages/labtop x15.jpg",
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "catId": {
+    "$oid": "6681f5104925e1d54b831977"
+  },
+  "__v": 0
+}]

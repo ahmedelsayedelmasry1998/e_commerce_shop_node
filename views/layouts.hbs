@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <meta name="descraption" content="This Site To E Commerce Shop" />
+    <meta name="author" content="Ahmed Elmasry" />
+    <meta name="keywords" content="Ahmed Elmasry,ahmed elmasry,e commerce shop,E Commerce Shop" />
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/all.css' />
+    <link rel='stylesheet' href='/stylesheets/styleLogin.css' />
+  </head>
+  <body>
+    <div class="masterConainer">
+        <div class="content">
+            <header>
+              
+                <h2>
+                    Ahmed Shop
+                </h2>
+                <div class="profile">
+                    <ul class="ul-main">
+                        <li>{{#if userName}}
+                        {{userName}}
+                    {{else}}
+                        Ahmed Shop
+                    {{/if}}
+                            <i class="fas fa-chevron-down icon-rotate" id="icon-arrow"></i>  
+                        </li>
+                    </ul>
+                </div>
+            </header>
+    {{{body}}}
+            </div>
+            <footer>
+                Created With Ahmed Elmasry
+            </footer>
+        </div>
+    </div>
+  <script src="/javascripts/all.js"></script>
+  <script src="/javascripts/main.js"></script>
+  </body>
+</html>

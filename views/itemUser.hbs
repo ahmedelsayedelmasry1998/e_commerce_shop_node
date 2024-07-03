@@ -1,0 +1,21 @@
+
+<div class="masterContent">
+    <h1 class="title-content">{{catName}}</h1>
+    <div class="data-content">
+        <div class="itemsUser">
+                {{#each items}}
+                    <div class="contItem">
+                    <div class="imgContent">
+                        <img width="200" src="{{this.itemPhoto}}" alt="">
+                    </div>
+                    <div class="bodyContent">
+                        <h2><a href="/itemDesc/{{this._id}}">{{this.itemName}}</a></h2>
+                        <h2 class="price">{{this.itemPrice}} LE</h2>
+                        <h3>Country Made : {{this.counteryMade}}</h3>
+                        <h3>Username : {{this.userId.usreName}}</h3>
+                        <h4>Added Date : {{this.addedDate}}</h4>
+                    </div>
+                </div>
+                {{/each}}
+        </div>
+    </div>

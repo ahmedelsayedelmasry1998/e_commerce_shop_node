@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6680673e498c21d445aeabc8"
+  },
+  "catName": "Hand Made",
+  "descraption": "This is hand made",
+  "parentItem": "start",
+  "visibility": 1,
+  "allowComment": 1,
+  "allowAds": 1,
+  "catActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6681f5104925e1d54b831977"
+  },
+  "catName": "Laptops",
+  "descraption": "This is Laptops Catogary",
+  "parentItem": "start",
+  "visibility": 1,
+  "allowComment": 1,
+  "allowAds": 1,
+  "catActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66846f97d3edd357ad8cfd3c"
+  },
+  "catName": "Mobiles",
+  "descraption": "This is mobile Catogary",
+  "parentItem": "",
+  "visibility": 1,
+  "allowComment": 1,
+  "allowAds": 1,
+  "catActive": 0,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684707ecb217ccea45a605b"
+  },
+  "catName": "Mobiles",
+  "descraption": "This is mobile Catogary",
+  "parentItem": "66826957fae9a230c01d3310",
+  "visibility": 1,
+  "allowComment": 1,
+  "allowAds": 1,
+  "catActive": 0,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668472c7d05f7194b6cbfbd8"
+  },
+  "catName": "Mobiles",
+  "descraption": "This is mobile Catogary",
+  "parentItem": "Hand Mouse",
+  "visibility": 1,
+  "allowComment": 1,
+  "allowAds": 1,
+  "catActive": 0,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "usreName": "Ahmed Elmasry",
+  "password": "12345",
+  "email": "www.ahmed@gmail.com",
+  "userType": "Admin",
+  "userActive": 1,
+  "__v": 0,
+  "hireDate": {
+    "$date": "2024-06-10T00:00:00.000Z"
+  },
+  "fullName": "Ahmed Elsayed Elmasry"
+},
+{
+  "_id": {
+    "$oid": "667f18da79ef567ce0b50231"
+  },
+  "usreName": "Mohamed Elmasry",
+  "password": "12345",
+  "email": "www.mohamed@gmail.com",
+  "userType": "User",
+  "userActive": 1,
+  "__v": 0
+}]

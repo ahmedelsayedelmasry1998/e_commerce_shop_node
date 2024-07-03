@@ -1,0 +1,74 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Items</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <form action="/editItem" method="POST" class="addInTable">
+                <input style="display: none;" type="text" name="itemId" value="{{itemId}}">
+                <div class="row">
+                    <span>Item Name : </span>
+                    <input class="itemVal" type="text" name="itemName" value="{{itemName}}">
+                </div>
+                <div class="row">
+                    <span>Item Price : </span>
+                    <input class="itemVal" type="number" name="price" value="{{itemPrice}}">
+                </div>
+                <div class="row">
+                    <span>Item Date : </span>
+                    <input class="itemVal" type="date" name="date" value="{{addedDate}}">
+                </div>
+                <div class="row">
+                    <span>Country Made : </span>
+                    <input class="itemVal" type="text" name="country" value="{{countryMade}}">
+                </div>
+                <div class="row">
+                    <span>Status : </span>
+                    <select class="itemVal" name="status" id="">
+                        <option value="0">New</option>
+                        <option value="1">Like New</option>
+                        <option value="2">Used</option>
+                        <option value="3">Very Used</option>
+                        {{#if newItem}}
+                          <option selected value="0">New</option>
+                        <option value="1">Like New</option>
+                        <option value="2">Used</option>
+                        <option value="3">Very Used</option>
+                        {{/if}}
+                        {{#if likedNew}}
+                          <option  value="0">New</option>
+                        <option selected value="1">Like New</option>
+                        <option value="2">Used</option>
+                        <option value="3">Very Used</option>
+                        {{/if}}
+                        {{#if used}}
+                          <option selected value="0">New</option>
+                        <option value="1">Like New</option>
+                        <option selected value="2">Used</option>
+                        <option value="3">Very Used</option>
+                        {{/if}}
+                        {{#if veryUsed}}
+                          <option selected value="0">New</option>
+                        <option value="1">Like New</option>
+                        <option  value="2">Used</option>
+                        <option selected value="3">Very Used</option>
+                        {{/if}}
+                    </select>
+                </div>
+                <div class="row">
+                    <span>Cotogeries : </span>
+                    <select class="itemVal" name="parentItems" id="">
+                        {{#each cat}}
+                        {{#if ../selectedCat}}
+                             <option selected value="{{this._id}}">{{this.catName}}</option>
+                        {{else}}
+                             <option value="{{this._id}}">{{this.catName}}</option>
+                        {{/if}}
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="row">
+                    <button class="btn-save save"><i class="fa-regular fa-pen-to-square"></i> Update Item</button>
+                </div>
+            </form>
+        </div>
+    </div>

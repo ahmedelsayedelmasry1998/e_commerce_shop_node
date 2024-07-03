@@ -1,0 +1,37 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Categories</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <div class="search">
+                <input type="text" placeholder="Search..." name="" id="search">
+            </div>
+            <div class="add">
+                <a href="/addCatogary">Add Catogery</a>
+            </div>
+        </div>
+        <div id="containerDiv" class="allData">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Descraption</th>
+                    <th>Child Item</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                {{#each resault}}
+                  <tr>
+                        <td>{{{this.catName}}}</td>
+                        <td>{{{this.descraption}}}</td>
+                        <td>{{{this.parentItem}}}</td>
+                        <td>
+                           <a href="/editCatogary/{{this._id}}" class="btn-edit"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                        </td> 
+                        <td>
+                            <a href="/deleteCatogary/{{this._id}}"class="btn-delete"><i class="fa-solid fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>

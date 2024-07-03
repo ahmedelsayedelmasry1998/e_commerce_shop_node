@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "668073c55f2806187b92c32f"
+  },
+  "comment": "Good Product",
+  "status": "Not Approve",
+  "commentDate": {
+    "$date": "2024-06-29T20:51:17.762Z"
+  },
+  "commentActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "itemId": {
+    "$oid": "6680676e498c21d445aeabcd"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668073c55f2806187b92c330"
+  },
+  "comment": "Thank You",
+  "status": "Approve",
+  "commentDate": {
+    "$date": "2024-06-29T20:51:17.784Z"
+  },
+  "commentActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50230"
+  },
+  "itemId": {
+    "$oid": "6680676e498c21d445aeabcd"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66828c1f26e1978e40dfdf72"
+  },
+  "comment": "This Is Comment With LabtopX15 , Thanks",
+  "status": "Not Approve",
+  "commentActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50231"
+  },
+  "itemId": {
+    "$oid": "6682699dfae9a230c01d3322"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66828cab2e90a018cf74fdd1"
+  },
+  "comment": "Thanks",
+  "status": "Approve",
+  "commentActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50231"
+  },
+  "itemId": {
+    "$oid": "6682699dfae9a230c01d3322"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66828cf53da01f15b9d9fca7"
+  },
+  "comment": "Thank You",
+  "status": "Approve",
+  "commentActive": 1,
+  "userId": {
+    "$oid": "667f18da79ef567ce0b50231"
+  },
+  "itemId": {
+    "$oid": "6682699dfae9a230c01d3322"
+  },
+  "__v": 0
+}]

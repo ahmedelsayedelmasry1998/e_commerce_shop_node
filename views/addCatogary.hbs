@@ -1,0 +1,50 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Categories</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <form action="/addCatogary" method="POST" class="addInTable">
+                <div class="row">
+                    <span>Category Name : </span>
+                    <input type="text" name="catName" placeholder="Please Enter Category Name...">
+                </div>
+                <div class="row">
+                    <span>Category Descraption : </span>
+                    <input type="text" name="descraption" placeholder="Please Enter Category Descraption...">
+                </div>
+                <div class="row">
+                    <span>Child Items : </span>
+                    <select name="childItems" id="">
+                        <option value="start">Please Selecte Child Item</option>
+                        {{#each  items}}
+                            <option value="{{this.itemName}}">{{this.itemName}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="row">
+                    <span>Visibility : </span>
+                    <div class="radios">
+                        <input type="radio" id="vis" checked name="visibleItem" value="1"><label for="vis"> Visibile</label>
+                        <input type="radio" id="notVis" name="visibleItem" value="0"><label for="notVis"> Not Visibile</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <span>Allow Comment : </span>
+                    <div class="radios">
+                        <input type="radio" id="allow" checked name="allowComment" value="1"><label for="allow"> Allowed</label>
+                        <input type="radio" id="notAllow" name="allowComment" value="0"><label for="notAllow"> Not Allowed</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <span>Allow Ads : </span>
+                    <div class="radios">
+                        <input type="radio" id="ads" checked name="allowAds" value="1"><label for="ads"> Allowed</label>
+                        <input type="radio" id="notAds" name="allowAds" value="0"><label for="notAds"> Not Allowed</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn-save save"><i class="fa-solid fa-plus"></i> Save Catogery</button>
+                </div>
+            </form>
+        </div>
+    </div>

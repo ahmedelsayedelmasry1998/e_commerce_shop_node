@@ -1,0 +1,42 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Comments</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <div class="search">
+                <input type="text" placeholder="Search..." name="" id="search">
+            </div>
+        </div>
+        <div id="containerDiv" class="allData">
+            <table>
+                <tr>
+                    <th>Comments</th>
+                    <th>Comment Date</th>
+                    <th>Item Name</th>
+                    <th>User Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>Approvment</th>
+                </tr>
+                {{#each resault}}
+                     <tr>
+                        <td>{{this.comment}}</td>
+                        <td>{{this.commentDate}}</td>
+                        <td>{{this.itemId.itemName}}</td>
+                        <td>{{this.userId.usreName}}</td>
+                        <td>
+                                <a href="/editComment/{{this._id}}" class="btn-edit"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                        </td>
+                        <td>
+                                <a href="/deleteComment/{{this._id}}" class="btn-delete"><i class="fa-solid fa-trash"></i> Delete</a>
+                        </td>
+                        
+                            <td>
+                                    <a href="/approvement/{{this._id}}" class="btn-approve"><i class="fa-solid fa-check"></i>{{this.status}}</a>
+                            </td>
+                    </tr>
+                {{/each}}
+                   
+            </table>
+        </div>
+    </div>

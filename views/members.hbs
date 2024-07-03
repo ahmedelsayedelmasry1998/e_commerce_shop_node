@@ -1,0 +1,36 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Members</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <div class="search">
+                <input type="text" placeholder="Search..." name="" id="search">
+            </div>
+        </div>
+        <div id="containerDiv" class="allData">
+            <table class="customTable" style="font-size: 13px;">
+                <tr>
+                    <th>User Name</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>User Type</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                {{#each resault}}
+                     <tr>
+                        <td>{{this.usreName}}</td>
+                        <td>{{this.password}}</td>
+                        <td>{{this.email}}</td>
+                       <td>{{this.userType}}</td>
+                        <td>
+                                <a href="/editMember/{{this._id}}" class="customSizeFont btn-edit"><i class="fa-regular fa-pen-to-square"></i> Edit</a>
+                        </td>
+                        <td>
+                                <a href="/deleteMember/{{this._id}}" class="customSizeFont btn-delete"><i class="fa-solid fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>

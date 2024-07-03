@@ -1,0 +1,87 @@
+
+<div class="masterContent">
+    <h1 class="title-content">{{cat}}</h1>
+    <div class="data-content">
+            <div class="itemDesc">
+                <div class="imgDesc">
+                    <img src="{{itemPhoto}}" alt="">
+                </div>
+                <div class="bodyDesc">
+                    <table>
+                        <tr>
+                            <td class="left">Item Name : </td>
+                            <td class="right">{{itemName}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Item Price : </td>
+                            <td class="right">{{itemPrice}} LE</td>
+                        </tr>
+                      
+                        <tr>
+                            <td class="left">Country Made : </td>
+                            <td class="right">{{country}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Catogery Name : </td>
+                            <td class="right">{{catName}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">User Name : </td>
+                            <td class="right">{{userName}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        <div class="addComment">
+            <form action="/addComment" method="POST">
+                <input type="text" style="display:none;" name="itemId" value="{{itemId}}">
+                <textarea placeholder="Please Enter Your Comment..." name="comment" id="" cols="30" rows="5"></textarea>
+                <input type="submit" value="Add Comment" style="width: 40%;" />
+            </form>
+        </div>
+         {{#each items}}
+            <div class="comments">
+               
+                           <div class="commentsDivision">
+                    <table>
+                        <tr>
+                            <td class="left">Comment : </td>
+                            <td class="right">{{this.comment}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Status: </td>
+                            <td class="right">{{this.status}}</td>
+                        </tr>
+                    </table>
+                </div> 
+                 <div class="userDivision">
+                    <table>
+                        <tr>
+                            <td class="left">Username : </td>
+                            <td class="right">{{this.userId.usreName}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">email: </td>
+                            <td class="right">{{this.userId.email}}</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="userDivision">
+                    <table>
+                        <tr>
+                            <td class="left">Item Name : </td>
+                            <td class="right">{{this.itemId.itemName}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Item Price: </td>
+                            <td class="right">{{this.itemId.itemPrice}}</td>
+                        </tr>
+                        <tr>
+                            <td class="left">Added Date: </td>
+                            <td class="right">{{this.itemId.addedDate}}</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            {{/each}}

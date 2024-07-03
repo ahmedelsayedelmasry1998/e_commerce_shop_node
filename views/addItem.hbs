@@ -1,0 +1,50 @@
+
+<div class="masterContent">
+    <h1 class="title-content">Items</h1>
+    <div class="data-content">
+        <div class="searchBox">
+            <form enctype="multipart/form-data" action="" method="POST" class="addInTable">
+                <div class="row">
+                    <span>Item Name : </span>
+                    <input class="itemVal" type="text" name="itemName" placeholder="Please Enter Item Name...">
+                </div>
+                <div class="row">
+                    <span>Item Price : </span>
+                    <input class="itemVal" type="number" name="price" placeholder="Please Enter Item Price...">
+                </div>
+                <div class="row">
+                    <span>Item Date : </span>
+                    <input class="itemVal" type="date" name="date" placeholder="Please Enter Date Added...">
+                </div>
+                <div class="row">
+                    <span>Country Made : </span>
+                    <input class="itemVal" type="text" name="country" placeholder="Please Enter Item Country Made...">
+                </div>
+                <div class="row">
+                    <span>Status : </span>
+                    <select class="itemVal" name="status" id="">
+                        <option value="start">Please Your Status</option>
+                        <option value="0">New</option>
+                        <option value="1">Like New</option>
+                        <option value="2">Used</option>
+                        <option value="3">Very Used</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <span>Cotogeries : </span>
+                    <select class="itemVal" name="parentItems" id="">
+                        {{#each resault}}
+                            <option value="{{this._id}}">{{this.catName}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="row">
+                    <span>Item Photo : </span>
+                    <input type="file" name="upload_file" class="itemVal" />
+                </div>
+                <div class="row">
+                    <button class="btn-save save"><i class="fa-solid fa-plus"></i> Save Item</button>
+                </div>
+            </form>
+        </div>
+    </div>
